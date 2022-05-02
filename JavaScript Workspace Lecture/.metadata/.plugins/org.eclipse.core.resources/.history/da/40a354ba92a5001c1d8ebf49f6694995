@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../libs/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	/* window.onload = function() {
+		var menu = document.getElementById("menu");
+		var liList = menu.getElementsByTagName("li");
+		//document.write(liList);
+		console.log(liList);
+
+		for (var i = 0; i < liList.length; i++) {
+			var li = liList[i];
+			li.style.color = "#f00";
+			//liList[i].style.color = "#F00";
+		}
+
+		//		menu.style.color = "#f00";
+	}*/
+
+	$("#menu li").css("color", "red");
+</script>
+</head>
+<body>
+	<ul id="menu">
+		<li>menu1</li>
+		<li>menu2</li>
+		<li>menu3</li>
+		<li>menu4</li>
+		<li>menu5</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+</style>
+<script type="text/javascript" src="../libs/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	// 확인 버튼(#btn)을 클릭하면 "안녕하세요" 메세지 출력
+	// 단, 이벤트 리스너는 오직 한번만 실행
+	$(document).ready(function() {
+		$("ul").on("click", function(e) {
+			console.log("테스트 용=" + e.target.tagName)
+			if (e.target.tagName == "LI")
+				alert($(e.target).html());
+		});
+
+	});
+</script>
+</head>
+<body>
+	<ul class="menu">
+		<li>menu1</li>
+		<li>menu2</li>
+		<li>menu3</li>
+		<li>menu4</li>
+	</ul>
+</body>
+</html>

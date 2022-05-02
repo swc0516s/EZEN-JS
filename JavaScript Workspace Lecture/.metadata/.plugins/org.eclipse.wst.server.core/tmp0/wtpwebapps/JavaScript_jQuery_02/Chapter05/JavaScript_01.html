@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#area1 {
+	width: 300px;
+	height: 200px;
+	border: 1px dashed;
+}
+
+#area2 {
+	width: 300px;
+	height: 200px;
+	border: 1px dashed;
+}
+
+#area3 {
+	width: 300px;
+	height: 200px;
+	border: 1px dashed;
+}
+</style>
+<script type="text/javascript">
+	function start() {
+		alert("웹 문서가 로드되었습니다");
+	}
+</script>
+</head>
+<body onload="start()">
+	<!-- <script type="text/javascript">
+		alert("데이터 출력 문구 실행 성공1");
+		document.write("document.write()를 통해 내용 작성");
+		alert("데이터 출력 문구 실행 성공2");
+	</script> -->
+	<h3>innerHTML을 활용하여 요소의 내용 변경하기</h3>
+	<div id="area1">자바 스크립트에서 태그 엘리먼트(요소)의 값을 읽거나 안의 내용을 변경할 때
+		innerHTML 속성을 사용한다.</div>
+	<button onclick="changeValue()">innerHTML로 내용 변경하기</button>
+	<script type="text/javascript">
+		function changeValue() {
+			var divEl = document.getElementById("area1");
+			alert(divEl);
+			divEl.innerHTML = "innerHTML 속성으로 내부" + "값을 변경합니다.";
+
+		}
+	</script>
+
+	<hr>
+	<button onclick="printConsole()">console.log()사용하기</button>
+	<script type="text/javascript">
+		function printConsole() {
+			console.log("콘솔 화면에 결과를 출력합니다.");
+		}
+	</script>
+
+	<hr>
+
+	<h3>window.confirm()함수 사용하여 데이터 입력하기</h3>
+	<p>
+		어떠한 질문에 대해서 "예/아니오"라는 참 거짓의 결과를<br> 얻기 위해 사용하는 함수
+	</p>
+	<p>
+		확인 버튼을 클릭하면 true,<br> 취소 버튼을 클릭하면 false결과를 반환한다.
+	</p>
+	<button onclick="checkGender()">성별 구별하기</button>
+	<div id="area2"></div>
+	<script type="text/javascript">
+		function checkGender() {
+			var checkResult = window.confirm("남성이면 확인, 여성이면 취소를 눌러주세요");
+			console.log("결과:" + checkResult);
+
+			var str = "";
+			if (checkResult == true) {
+				str = "남성";
+			} else {
+				str = "여성";
+			}
+			console.log("성별 확인:" + str);
+			var divEl2 = document.getElementById("area2");
+			divEl2.innerHTML = "당신은 " + str + "입니다.<br>";
+		}
+	</script>
+
+	<hr>
+	<h3>window.prompt()함수 사용하기</h3>
+	<p>
+		prompt는 텍스트 필드와 같이 특정 내용을 입력하여<br> 해당 값을 결과로 반환하는 함수
+	</p>
+	<button onclick="testPrompt()">이름 입력하기</button>
+	<div id="area3"></div>
+	<script type="text/javascript">
+		function testPrompt() {
+			var result = window.prompt("당신의 이름은 무엇입니까?");
+			//var divEl3 = document.getElementById("area3");
+			//divEl3.innerHTML = "당신이 바로 그 " + result + "이군요<br>" + "환영합니다.";
+			area3.innerHTML = "당신이 바로 그 " + result + "이군요<br>" + "환영합니다.";
+		}
+	</script>
+
+
+
+</body>
+</html>

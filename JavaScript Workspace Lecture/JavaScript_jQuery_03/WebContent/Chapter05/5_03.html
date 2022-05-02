@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../libs/jquery-3.6.0.min.js"></script>
+
+<style type="text/css">
+div {
+	margin: 30px;
+	padding: 30px;
+	font-size: 24px;
+}
+</style>
+<!--
+<script type="text/javascript">
+	window.onload = function() {
+		var content = document.getElementById("test1");
+		//content.style.font-size = "12px";
+		content.style.fontSize = "12px";
+
+	}
+</script> -->
+<script type="text/javascript">
+	$(document).ready(function() {
+		var content = $("#test1");
+		//content.css("fontSize", "18px");
+		content.css("font-size", "32px");
+
+	});
+</script>
+</head>
+<body>
+	스타일 속성 이름을 그대로 사용
+	<div id="test1" class="content" style="color: #f00">스타일 다루기
+		테스트입니다.</div>
+</body>
+</html>

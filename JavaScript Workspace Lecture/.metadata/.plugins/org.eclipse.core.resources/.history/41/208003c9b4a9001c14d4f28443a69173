@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body {
+	font-size: 16px;
+}
+
+ul.menu {
+	list-style: none;
+	border: 1px #000 solid;
+}
+</style>
+<script type="text/javascript" src="../libs/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	var menu = null;
+	var menuName = null;
+	var selectedItem = null;
+
+	$(document).ready(function() {
+		init();
+		initEvent();
+	});
+	// 전역에서 사용할 요소 초기화
+	function init() {
+		menu = $("ul.menu");
+		menuName = $("#menuName")
+	}
+
+	// 이벤트 초기화
+	function initEvent() {
+		$("#add").click(function() {
+			addMenu();
+		});
+
+		menu.on("click", function() {
+			selectItem($(this));
+		});
+
+	}
+
+	function addMenu() {
+		var menuName = menuName.val();
+	}
+</script>
+</head>
+<body>
+	<div>
+		<input type="text" id="menuName">
+		<button id="add">추가</button>
+		<button id="update">수정</button>
+		<button id="remove">삭제</button>
+		<button id="up">UP</button>
+		<button id="down">DOWN</button>
+	</div>
+	<ul class="menu">
+
+
+
+	</ul>
+
+</body>
+</html>

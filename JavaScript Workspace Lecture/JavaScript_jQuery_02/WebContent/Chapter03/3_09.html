@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var t = "Hello Thank you good luck to you";
+	
+	document.write(t.charAt(16),"<br>"); // g
+	document.write(t.indexOf("you"),"<br>"); // 12
+	document.write(t.indexOf("you",16),"<br>"); // 16 : 시작 위치 // 29
+	document.write(t.lastIndexOf("you"),"<br>"); //29
+	document.write(t.lastIndexOf("you",25),"<br>"); //12
+	document.write(t.match("luck"),"<br>"); // luck // 없으면 null
+	document.write(t.search("you"),"<br>"); // 12
+	document.write(t.substr(21,4),"<br>"); // luck //substa(start,갯수)
+	document.write(t.substring(6,12),"<br>"); //thank //substring(start, end-1)
+	document.write(t.replace("you","me"),"<br>"); // 처음으로 나오는 문자열 교체  
+	document.write(t.toLowerCase(),"<br>");
+	document.write(t.toUpperCase(),"<br>");
+	document.write(t.length,"<br>"); //32 공백 포함
+</script>
+</head>
+<body>
+
+</body>
+</html>

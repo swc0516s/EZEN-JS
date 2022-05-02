@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	/*
+	배열 메서드
+	 */
+	// indexOf():검색
+	var varArrIndex = new Array(123, "ABC", "가나다", "abc", "가나다", "123");
+	console.log("varArrIndex.indexOf(\"가나다\"):" + varArrIndex.indexOf("가나다"));// 2
+	console.log("varArrIndex.lastindexOf(\"가나다\"):"
+			+ varArrIndex.lastIndexOf("가나다")); // 4
+	console.log("varArrIndex.indexOf(123):" + varArrIndex.indexOf(123)); //0	
+	console.log("varArrIndex.lastindexOf(123):" + varArrIndex.lastIndexOf(123)); // 0
+	console.log("varArrIndex.lastindexOf(123):"
+			+ varArrIndex.lastIndexOf("123")); // 5
+	console.log("varArrIndex.indexOf(\"XYZ\"):" + varArrIndex.indexOf("XYZ")); // -1
+
+	//concat():연결
+	var varArrFir = new Array("ABC", "DEF", "GHI", "JKL");
+	var varArrSec = new Array("가나다", "라마바", "사아차", "카타파");
+	var varArrRes = varArrFir.concat(varArrSec);
+	console.log("varArrFir:" + varArrFir);
+	console.log("varArrSec:" + varArrSec);
+	console.log("varArrRes:" + varArrRes);
+
+	//join():결합
+	var varArrJoin = new Array("AB", "CD", "EF", "HI");
+	console.log("varArrJoin:" + varArrJoin.join());
+	console.log("varArrJoin:" + varArrJoin.join("|"));
+	console.log("varArrJoin:" + varArrJoin.join(":"));
+	console.log("varArrJoin:" + varArrJoin.toString());
+
+	// sort():정렬
+	var varArrSort = new Array("E", "B", "A", "C", "D");
+	console.log("varArrSortBefore:" + varArrSort);
+	console.log("varArrSort:" + varArrSort.sort());
+	console.log("varArrSortAfter:" + varArrSort);
+
+	// push():추가
+	var varArrPush = new Array("ABC","DEF");
+	console.log("varArrPush:" + varArrPush.push("가나다","마바사"));
+	console.log("varArrPush:" + varArrPush);
+	
+	// shift(),pop() : 삭제 , pop(마지막 데이터 삭제)
+	var varArrShiftPop = new Array("가","나","다","라","마");
+	console.log("varArrShiftPop.shift():"+varArrShiftPop.shift()); //가
+	console.log("varArrShiftPop.shift():"+varArrShiftPop.shift()); //나
+	console.log("varArrShiftPop:"+varArrShiftPop); //다라마
+	console.log("varArrShiftPop.length:"+varArrShiftPop.length);//3
+	
+	console.log("varArrShiftPop.pop():"+varArrShiftPop.pop());//마
+	console.log("varArrShiftPop.pop():"+varArrShiftPop.pop());//라
+	console.log("varArrShiftPop:"+varArrShiftPop);//다
+	console.log("varArrShiftPop.length:"+varArrShiftPop.length);//1
+	
+	varArrShiftPop.unshift("가");
+	console.log("varArrShiftPopori:"+varArrShiftPop); // 가 다
+	console.log("varArrShiftPopori:"+varArrShiftPop.length); // 2
+	varArrShiftPop[varArrShiftPop.length]="마";
+	console.log("varArrShiftPopori:"+varArrShiftPop); // 가 다 마 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

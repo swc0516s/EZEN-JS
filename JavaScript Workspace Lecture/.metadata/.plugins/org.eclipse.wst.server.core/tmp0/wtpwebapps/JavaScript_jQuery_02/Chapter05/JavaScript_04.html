@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	str = "전역 변수";
+	var str2 = "전역 변수";
+
+	window.onload = function() {
+		var str = "지역 변수";
+		console.log(str); //지
+		console.log(window.str); //전
+		console.log(this.str); // 전
+		str3 = '난 누구?'
+		console.log(str3);
+		console.log(this.str3);
+		what = "나의 정체는?";
+		showWhat();
+	}
+
+	function showWhat() {
+		console.log(what);
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

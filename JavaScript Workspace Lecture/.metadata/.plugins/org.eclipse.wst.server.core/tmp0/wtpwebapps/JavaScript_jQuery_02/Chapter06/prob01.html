@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+table, tr, td {
+	border: 1px solid black;
+	text-align: center;
+}
+
+td {
+	width: 20px;
+}
+</style>
+</head>
+<body>
+	<h1>자동 테이블 만들기</h1>
+	<h5>힌트:반복문 사용, document.write()를 사용하여 출력</h5>
+	<button onclick="makeTable()">테이블 생성</button>
+	<script type="text/javascript">
+		function makeTable() {
+			var r = window.prompt("행 개수를 입력하세요.")
+			var c = window.prompt("열 개수를 입력하세요.")
+
+			var count = 1;
+
+			document.write("<table border='1px;'>")
+			for (var i = 0; i < r; i++) {
+				document.write("<tr>");
+				for (var j = 0; j < c; j++) {
+					document.write("<td>");
+					document.write(count);
+					count++;
+				}
+			}
+			document.write("</td>")
+			document.write("</tr>")
+			document.write("</table>")
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body {
+	font-size: 16pt;
+	font-family: "굴림";
+}
+
+div, p, ul, li {
+	border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+</body>
+</html>

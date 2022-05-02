@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+p {
+	width: 500px;
+	height: 100px;
+	background: lightgray;
+	border: 1px solid black;
+}
+</style>
+</head>
+<body>
+	<p id="p2"></p>
+	<button onclick="test2()">실행 확인</button>
+	<script type="text/javascript">
+		test2 = function() {
+			var p2 = document.getElementById("p2");
+			p2.innerHTML = "text2()함수 실행 확인";
+		}
+	</script>
+
+</body>
+</html>

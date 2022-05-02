@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body {
+	font-size: 16pt;
+	font-family: "굴림";
+}
+
+div, p, ul, li {
+	border: 1px #eeeeee solid;
+	margin: 10px;
+}
+
+ul {
+	padding: 10px;
+}
+
+li.select {
+	background-color: #ccc;
+}
+</style>
+<script type="text/javascript" src="../libs/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	// border 속성을 "border", "4px solid #f00"
+	$(document).ready(function() {
+		var menu = $("ul.menu");
+		menu.parents(".page").css("border", "4px solid #f00");
+	});
+</script>
+</head>
+<body>
+	<ul class="menu">
+		<li>menu1</li>
+	</ul>
+</body>
+</html>

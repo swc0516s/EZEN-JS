@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+</style>
+<script type="text/javascript" src="../libs/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	//클릭한 메뉴 항목을 출력해주세요
+	$(document).ready(function() {
+		$("#btn").on("click", function() {
+			alert(this);
+		});
+	});
+</script>
+</head>
+<body>
+	<ul class="menu">
+		<li>menu1</li>
+		<li>menu2</li>
+		<li class="select">menu3</li>
+		<li>menu4</li>
+		<li>menu5</li>
+
+
+	</ul>
+</body>
+</html>

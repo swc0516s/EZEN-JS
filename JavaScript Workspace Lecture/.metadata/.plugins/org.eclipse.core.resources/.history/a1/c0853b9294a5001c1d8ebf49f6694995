@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body {
+	font-size: 16pt;
+	font-family: "굴림";
+}
+
+div, p, ul, li {
+	border: 1px #eeeeee solid;
+	margin: 10px;
+}
+
+ul {
+	padding: 10px;
+}
+
+li.select {
+	background-color: #ccc;
+}
+</style>
+<script type="text/javascript" src="../libs/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	
+</script>
+</head>
+<body>
+	<div id="sample" class="page">
+		샘플 페이지(div,id=samplePage.class=page)
+		<div id="header">헤더 영역</div>
+	</div>
+</body>
+</html>
